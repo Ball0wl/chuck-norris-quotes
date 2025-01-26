@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+    body {
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
+
+.header-container {
+    @apply bg-white text-white flex-grow p-14 grid grid-cols-1 md:grid-cols-2 gap-14 items-start;
+}
+
+.header-container img {
+    @apply w-40;
+}
+
+.content-container {
+    @apply flex-grow p-14 grid grid-cols-1 md:grid-cols-2 gap-14 items-center;
+}
+
+.content-image-wrapper {
+    @apply w-full flex justify-start;
+}
+
+.content-quote-wrapper {
+    @apply flex flex-col justify-center items-center text-left md:text-center;
+}
+
+.content-quote-title {
+    @apply text-xl font-semibold uppercase mb-4;
+}
+
+.content-quote-text {
+    @apply text-lg;
+}
+
+.content-quote-button {
+    @apply mt-12 px-4 py-2 bg-black text-white rounded shadow hover:bg-gray-800 ;
+}
+
+.footer-container {
+    @apply bg-white flex-grow text-center p-14 grid grid-cols-1 gap-14;
+}
+
+.footer-text {
+    @apply text-xl font-semibold uppercase;
+}
